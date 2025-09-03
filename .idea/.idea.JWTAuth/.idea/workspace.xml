@@ -9,8 +9,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="474462b5-0eaf-4963-8882-2029f3161174" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/JWTAuth/Services/AuthService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JWTAuth/Services/IAuthService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.JWTAuth/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.JWTAuth/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JWTAuth/Controllers/AuthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/JWTAuth/Controllers/AuthController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JWTAuth/JWTAuth.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/JWTAuth/JWTAuth.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JWTAuth/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/JWTAuth/Program.cs" afterDir="false" />
@@ -113,7 +112,7 @@
       <option name="presentableId" value="Default" />
       <updated>1756741322904</updated>
       <workItem from="1756741326565" duration="6023000" />
-      <workItem from="1756859452064" duration="427000" />
+      <workItem from="1756859452064" duration="1146000" />
     </task>
     <task id="LOCAL-00001" summary="create jwt token">
       <option name="closed" value="true" />
@@ -123,7 +122,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756746659498</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add services and interfaces">
+      <option name="closed" value="true" />
+      <created>1756859948179</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1756859948179</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,7 +152,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="create jwt token" />
-    <option name="LAST_COMMIT_MESSAGE" value="create jwt token" />
+    <MESSAGE value="add services and interfaces" />
+    <option name="LAST_COMMIT_MESSAGE" value="add services and interfaces" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

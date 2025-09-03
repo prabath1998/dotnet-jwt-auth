@@ -1,6 +1,9 @@
+using System.Text;
 using JWTAuth.Data;
 using JWTAuth.Services;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using Scalar.AspNetCore;
 
 
@@ -16,6 +19,19 @@ builder.Services.AddSwaggerGen();
 var connectionString = builder.Configuration.GetConnectionString("UserDatabase") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
+{
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = true,
+        ValidIssuer = builder.Configuration["AppSettings:Issuer"],
+        ValidateAudience = true,
+        ValidAudience = builder.Configuration["AppSettings:Audience"],
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["AppSettings:Token"]!)),
+        ValidateIssuerSigningKey = true
+    };
+});
 
 builder.Services.AddScoped<IAuthService, AuthService>();
 

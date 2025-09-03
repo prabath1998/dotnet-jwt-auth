@@ -4,6 +4,7 @@ using System.Text;
 using JWTAuth.Entities;
 using JWTAuth.Models;
 using JWTAuth.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
@@ -37,5 +38,12 @@ public class AuthController(IAuthService authService) : Controller
 
         return Ok(token);
     }
-    
+
+    [Authorize]
+    [HttpGet]
+    public IActionResult AuthenticatedOnly()
+    {
+        return Ok("Authenticated");
+    }
+
 }
