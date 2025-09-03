@@ -45,5 +45,12 @@ public class AuthController(IAuthService authService) : Controller
     {
         return Ok("Authenticated");
     }
+    
+    [Authorize(Roles = "Admin")]
+    [HttpGet("admin")]
+    public IActionResult AdminOnly()
+    {
+        return Ok("Admin");
+    }
 
 }
