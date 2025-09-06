@@ -9,13 +9,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="474462b5-0eaf-4963-8882-2029f3161174" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.JWTAuth/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.JWTAuth/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.JWTAuth/.idea/dataSources/9ade45ee-0589-4292-a0fa-30548eb9d3e1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.JWTAuth/.idea/dataSources/9ade45ee-0589-4292-a0fa-30548eb9d3e1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JWTAuth/Models/RefreshTokenRequestDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JWTAuth/Models/TokenResponseDto.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.JWTAuth/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.JWTAuth/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JWTAuth/Controllers/AuthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/JWTAuth/Controllers/AuthController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JWTAuth/Entities/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/JWTAuth/Entities/User.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JWTAuth/Migrations/AppDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/JWTAuth/Migrations/AppDbContextModelSnapshot.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JWTAuth/Services/AuthService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/JWTAuth/Services/AuthService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JWTAuth/Services/IAuthService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/JWTAuth/Services/IAuthService.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,8 +45,9 @@
     <setting file="file://$PROJECT_DIR$/JWTAuth/Controllers/AuthController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/JWTAuth/Data/AppDbContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/JWTAuth/Entities/User.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/JWTAuth/Models/RefreshTokenRequestDto.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/JWTAuth/Models/TokenResponseDto.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/JWTAuth/Models/UserDto.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///home/prabath/RiderProjects/JWTAuth/JWTAuth/Program.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -117,6 +119,8 @@
       <updated>1756741322904</updated>
       <workItem from="1756741326565" duration="6023000" />
       <workItem from="1756859452064" duration="1817000" />
+      <workItem from="1757169828634" duration="655000" />
+      <workItem from="1757170533006" duration="2665000" />
     </task>
     <task id="LOCAL-00001" summary="create jwt token">
       <option name="closed" value="true" />
